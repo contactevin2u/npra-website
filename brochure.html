@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NPRA Registration Services - AA Alive Sdn Bhd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.5; }
+
+    /* Page 1 - Cover */
+    .page { width: 100%; page-break-after: always; padding: 50px 60px; min-height: 100vh; }
+    .page:last-child { page-break-after: avoid; }
+
+    /* Cover Page */
+    .cover {
+      background: linear-gradient(135deg, #0a3560 0%, #0f4c81 40%, #1a6bb5 100%);
+      color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+    }
+    .cover-logo {
+      width: 80px; height: 80px; background: #fff; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1.6rem; color: #0f4c81; margin-bottom: 30px;
+    }
+    .cover h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    .cover h1 span { color: #e8a838; }
+    .cover .subtitle { font-size: 1.1rem; color: rgba(255,255,255,0.8); margin-bottom: 40px; max-width: 500px; }
+    .cover-stats { display: flex; gap: 40px; margin-top: 30px; }
+    .cover-stat { text-align: center; }
+    .cover-stat .num { font-size: 2rem; font-weight: 800; color: #e8a838; display: block; }
+    .cover-stat .label { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+    .cover-contact { margin-top: 50px; font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+    .cover-contact span { color: #e8a838; }
+
+    /* Content Pages */
+    .content { background: #fff; }
+    .page-title {
+      font-size: 1.5rem; color: #0a3560; margin-bottom: 6px;
+      padding-bottom: 10px; border-bottom: 3px solid #e8a838; display: inline-block;
+    }
+    .page-subtitle { color: #64748b; font-size: 0.9rem; margin-bottom: 28px; }
+
+    /* Cards */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+
+    .mini-card {
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px;
+      padding: 16px; border-left: 4px solid #0f4c81;
+    }
+    .mini-card h3 { font-size: 0.85rem; color: #0a3560; margin-bottom: 4px; }
+    .mini-card p { font-size: 0.75rem; color: #64748b; }
+    .mini-card:nth-child(2) { border-left-color: #e8a838; }
+    .mini-card:nth-child(3) { border-left-color: #16a34a; }
+    .mini-card:nth-child(4) { border-left-color: #7c3aed; }
+
+    /* Steps */
+    .steps { counter-reset: step; }
+    .step { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+    .step-num {
+      flex-shrink: 0; width: 32px; height: 32px; background: #0f4c81; color: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.85rem;
+    }
+    .step h3 { font-size: 0.85rem; color: #0a3560; margin-bottom: 2px; }
+    .step p { font-size: 0.75rem; color: #64748b; }
+
+    /* Table */
+    .fee-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; margin-top: 16px; }
+    .fee-table th { background: #0f4c81; color: #fff; padding: 10px 12px; text-align: left; }
+    .fee-table td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; }
+    .fee-table tr:nth-child(even) { background: #f8fafc; }
+
+    /* Info boxes */
+    .info-row { display: flex; gap: 14px; margin-bottom: 20px; }
+    .info-box {
+      flex: 1; text-align: center; background: #f8fafc; border: 1px solid #e2e8f0;
+      border-radius: 10px; padding: 18px 12px; position: relative; overflow: hidden;
+    }
+    .info-box::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: #0f4c81;
+    }
+    .info-box:nth-child(2)::before { background: #e8a838; }
+    .info-box:nth-child(3)::before { background: #16a34a; }
+    .info-box h3 { font-size: 0.8rem; color: #0a3560; margin-bottom: 4px; }
+    .info-box .big { font-size: 1.4rem; font-weight: 800; color: #e8a838; }
+    .info-box p { font-size: 0.7rem; color: #64748b; margin-top: 4px; }
+
+    /* Contact Page */
+    .contact-page {
+      background: linear-gradient(135deg, #0a3560 0%, #0f4c81 60%, #1a6bb5 100%);
+      color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+    }
+    .contact-page h2 { font-size: 1.8rem; margin-bottom: 8px; }
+    .contact-page .tagline { color: rgba(255,255,255,0.7); margin-bottom: 40px; }
+    .contact-items { display: flex; gap: 40px; margin-bottom: 40px; }
+    .contact-item { text-align: center; }
+    .contact-item .icon { font-size: 1.5rem; margin-bottom: 8px; }
+    .contact-item .label { font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+    .contact-item .value { font-size: 0.95rem; font-weight: 600; }
+    .contact-item .value a { color: #e8a838; text-decoration: none; }
+    .wa-btn {
+      display: inline-block; background: #25d366; color: #fff; padding: 14px 36px;
+      border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none;
+      margin-top: 10px;
+    }
+    .footer-note { margin-top: 50px; font-size: 0.75rem; color: rgba(255,255,255,0.4); }
+
+    /* Section label */
+    .section-label {
+      display: inline-block; background: rgba(15,76,129,0.08); color: #0f4c81;
+      padding: 4px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+    }
+
+    @media print {
+      .page { min-height: auto; height: 100vh; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: Cover -->
+  <div class="page cover">
+    <div class="cover-logo">AA</div>
+    <h1>NPRA <span>Cosmetic Product</span></h1>
+    <h1>Registration in Malaysia</h1>
+    <p class="subtitle">Your trusted partner for NPRA cosmetic product registration in Malaysia.</p>
+    <div class="cover-stats">
+      <div class="cover-stat"><span class="num">500+</span><span class="label">Products Registered</span></div>
+      <div class="cover-stat"><span class="num">15+</span><span class="label">Years Experience</span></div>
+      <div class="cover-stat"><span class="num">98%</span><span class="label">Success Rate</span></div>
+    </div>
+    <div class="cover-contact">
+      <span>AA Alive Sdn Bhd</span> &nbsp;|&nbsp; +60 10-206 2070 &nbsp;|&nbsp; info@aalive.com.my
+    </div>
+  </div>
+
+  <!-- PAGE 2: What is NPRA + Product Types -->
+  <div class="page content">
+    <span class="section-label">Overview</span>
+    <h2 class="page-title">What is NPRA?</h2>
+    <p class="page-subtitle">The National Pharmaceutical Regulatory Agency (NPRA) is the regulatory body under Malaysia's Ministry of Health responsible for ensuring the quality, safety, and efficacy of cosmetic products in the Malaysian market.</p>
+
+    <span class="section-label">Our Focus</span>
+    <h2 class="page-title" style="margin-top:8px;">Cosmetic Product Registration</h2>
+    <div class="grid-2" style="margin-top:18px;">
+      <div class="mini-card">
+        <h3>Skincare Products</h3>
+        <p>Moisturisers, serums, sunscreens, cleansers, toners, and anti-aging products.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Haircare Products</h3>
+        <p>Shampoos, conditioners, hair treatments, styling products, and hair colouring.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Cosmetics</h3>
+        <p>Foundations, lipsticks, eye shadows, mascaras, blushers, and nail products.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Personal Care</h3>
+        <p>Fragrances, deodorants, body lotions, bath products, and oral care items.</p>
+      </div>
+    </div>
+
+    <span class="section-label">Why It Matters</span>
+    <h2 class="page-title" style="margin-top:8px;">Why NPRA Registration is Crucial</h2>
+    <div class="grid-3" style="margin-top:18px;">
+      <div class="mini-card">
+        <h3>Consumer Safety</h3>
+        <p>Meets stringent safety standards for public health.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Legal Compliance</h3>
+        <p>Avoid penalties, seizure, and prosecution.</p>
+      </div>
+      <div class="mini-card">
+        <h3>Market Access</h3>
+        <p>Access Malaysia's 32M+ consumer market.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: Process + Fees -->
+  <div class="page content">
+    <span class="section-label">Step by Step</span>
+    <h2 class="page-title">Registration Process</h2>
+    <div class="steps" style="margin-top:18px;">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div><h3>Pre-Application Assessment</h3><p>Product evaluation, classification, and regulatory strategy.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div><h3>Document Preparation</h3><p>Compile dossiers, manufacturing info, quality control data in CTD format.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div><h3>QUEST 3+ Online Submission</h3><p>Submit application through NPRA's online portal with all required documents.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div><h3>Screening & Evaluation</h3><p>NPRA reviews submission. We manage all queries and deficiency letters.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div><h3>Approval & Registration</h3><p>Registration certificate issued. Post-approval support provided.</p></div>
+      </div>
+    </div>
+
+    <div class="info-row" style="margin-top: 24px;">
+      <div class="info-box">
+        <h3>Validity</h3>
+        <div class="big">5 Years</div>
+        <p>Renew 6 months before expiry</p>
+      </div>
+      <div class="info-box">
+        <h3>Timeline</h3>
+        <div class="big">FAST</div>
+        <p>Quick approval process</p>
+      </div>
+      <div class="info-box">
+        <h3>Consultant Fee</h3>
+        <div class="big">RM 800</div>
+        <p>Per product registration</p>
+      </div>
+    </div>
+
+    <table class="fee-table">
+      <thead>
+        <tr><th>Service</th><th>Fee (MYR)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>NPRA Cosmetic Registration (Consultant Fee)</strong></td><td><strong>RM 800</strong></td></tr>
+        <tr><td>NPRA Notification Fee (Government)</td><td>RM 50 per product</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- PAGE 4: Contact -->
+  <div class="page contact-page">
+    <div class="cover-logo" style="margin-bottom:20px;">AA</div>
+    <h2>Ready to Register Your Product?</h2>
+    <p class="tagline">Get a free consultation from our NPRA experts today.</p>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="icon">📞</div>
+        <div class="label">Phone</div>
+        <div class="value"><a href="tel:+60102062070">+60 10-206 2070</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">📧</div>
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:info@aalive.com.my">info@aalive.com.my</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">📍</div>
+        <div class="label">Address</div>
+        <div class="value">1, Jln Perusahaan Amari 4,<br>68100 Batu Caves, Selangor</div>
+      </div>
+    </div>
+    <a href="https://wa.me/60102062070" class="wa-btn">💬 WhatsApp Us Now</a>
+    <p class="footer-note">© 2026 AA Alive Sdn Bhd (1204108-D). All rights reserved.</p>
+  </div>
+
+</body>
+</html>

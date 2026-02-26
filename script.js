@@ -172,8 +172,8 @@ const modalData = {
     ]
   },
   colour: {
-    title: 'Colour Cosmetics',
-    desc: 'We register all types of colour cosmetics and makeup products with NPRA. Professional handling from application to approval.',
+    title: 'Cosmetics',
+    desc: 'We register all types of cosmetics and makeup products with NPRA. Professional handling from application to approval.',
     products: [
       'Foundations &amp; BB/CC creams',
       'Face powders &amp; setting sprays',
