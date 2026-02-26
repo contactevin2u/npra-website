@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NPRA Cosmetic Product Registration in Malaysia | AA Alive Sdn Bhd</title>
+  <meta name="description" content="AA Alive Sdn Bhd provides fast NPRA cosmetic product registration and notification services in Malaysia. Consultant fee only RM800." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-contact">
+        <a href="mailto:aaalivecentral2@gmail.com"><i class="fas fa-envelope"></i> aaalivecentral2@gmail.com</a>
+        <a href="tel:+60102062070"><i class="fas fa-phone"></i> +60 10-206 2070</a>
+      </div>
+      <div class="top-bar-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/60102062070?text=Hi%20AA%20Alive%2C%20I%27m%20interested%20in%20NPRA%20Cosmetic%20Registration.%0A%0APlease%20select%20a%20service%3A%0A1%EF%B8%8F%E2%83%A3%20New%20Cosmetic%20Product%20Registration%0A2%EF%B8%8F%E2%83%A3%20Registration%20Renewal%0A3%EF%B8%8F%E2%83%A3%20Product%20Variation%0A4%EF%B8%8F%E2%83%A3%20Other%0A%0APlease%20reply%20with%20your%20choice%20(1-4)." aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">AA</span>
+        <span class="logo-text">AA Alive <small>Sdn Bhd</small></span>
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#fees" class="nav-link">Fees</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link cta-btn">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-tag">NPRA Cosmetic Registration Experts</p>
+        <h1>Fast &amp; Affordable <span>NPRA Cosmetic Product Registration</span> in Malaysia</h1>
+        <p class="hero-sub">AA Alive Sdn Bhd helps you register your cosmetic products with NPRA quickly. Consultant fee only RM 800 per product.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-illustration" data-illustration="hero"></div>
+    </div>
+    <div class="hero-stats-bar">
+      <div class="container hero-stats">
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Products Registered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of Products -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2>Cosmetic Products We Register</h2>
+        <p>We handle NPRA registration for all types of cosmetic products. Fast processing, only RM 800 consultant fee.</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card" onclick="openModal('skincare')" style="cursor:pointer;">
+          <div class="product-card-illust" data-illustration="cosmetics"></div>
+          <div class="product-card-body">
+            <h3>Skincare Products</h3>
+            <p>Moisturisers, serums, sunscreens, cleansers, toners, and anti-aging products.</p>
+            <ul>
+              <li>Moisturisers &amp; serums</li>
+              <li>Sunscreens</li>
+              <li>Cleansers &amp; toners</li>
+            </ul>
+            <span class="card-more">Click for details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="product-card" onclick="openModal('haircare')" style="cursor:pointer;">
+          <div class="product-card-illust" data-illustration="cosmetics"></div>
+          <div class="product-card-body">
+            <h3>Haircare Products</h3>
+            <p>Shampoos, conditioners, hair treatments, styling products, and hair colouring.</p>
+            <ul>
+              <li>Shampoos &amp; conditioners</li>
+              <li>Hair treatments</li>
+              <li>Hair colouring</li>
+            </ul>
+            <span class="card-more">Click for details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="product-card" onclick="openModal('colour')" style="cursor:pointer;">
+          <div class="product-card-illust" data-illustration="cosmetics"></div>
+          <div class="product-card-body">
+            <h3>Colour Cosmetics</h3>
+            <p>Foundations, lipsticks, eye shadows, mascaras, blushers, and nail products.</p>
+            <ul>
+              <li>Foundations &amp; powders</li>
+              <li>Lipsticks &amp; lip care</li>
+              <li>Eye &amp; nail products</li>
+            </ul>
+            <span class="card-more">Click for details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="product-card" onclick="openModal('personal')" style="cursor:pointer;">
+          <div class="product-card-illust" data-illustration="cosmetics"></div>
+          <div class="product-card-body">
+            <h3>Personal Care</h3>
+            <p>Fragrances, deodorants, body lotions, bath products, and oral care items.</p>
+            <ul>
+              <li>Fragrances &amp; perfumes</li>
+              <li>Body lotions &amp; creams</li>
+              <li>Bath &amp; oral care</li>
+            </ul>
+            <span class="card-more">Click for details <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Detail Modals -->
+      <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+          <div id="modalBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Process -->
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Step by Step</span>
+        <h2>NPRA Registration Process</h2>
+        <p>Our team guides you through every stage of the NPRA registration process, ensuring a smooth and efficient experience.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content">
+            <h3>Contact Us</h3>
+            <p>WhatsApp or call us with your product details. We'll assess your cosmetic product and advise on the registration requirements.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content">
+            <h3>Prepare Documents</h3>
+            <p>We help you compile all required documents — product formulation, COA, GMP certificate, and label design.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content">
+            <h3>Submit to NPRA</h3>
+            <p>We submit your application through NPRA's online portal (QUEST 3+) and handle all queries on your behalf.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">4</div>
+          <div class="timeline-content">
+            <h3>Get Your Licence</h3>
+            <p>Once approved, you receive your NPRA notification number. Your cosmetic product is ready to sell in Malaysia!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Validity, Timeline & Fees -->
+  <section class="section" id="fees">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Key Information</span>
+        <h2>Validity, Timeline &amp; Fees</h2>
+        <p>Essential information about NPRA registration duration, processing timelines, and associated costs.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Registration Validity</h3>
+          <div class="info-highlight">5 Years</div>
+          <p>All NPRA product registrations are valid for <strong>five years</strong> from the date of approval. Renewal applications should be submitted at least 6 months before expiry.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Fast Processing</h3>
+          <div class="info-highlight">FAST Approval</div>
+          <p>We ensure <strong>fast processing</strong> for your cosmetic product registration. Get your NPRA licence quickly with our expert team.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-receipt"></i></div>
+          <h3>Consultant Fee</h3>
+          <div class="info-highlight">RM 800</div>
+          <p>Our consultant fee is only <strong>RM 800</strong> per product. NPRA government notification fee of RM 50 is charged separately.</p>
+        </div>
+      </div>
+
+      <div class="fee-table-wrapper">
+        <h3>NPRA Cosmetic Registration Fees</h3>
+        <table class="fee-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Fee (MYR)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Consultant Fee (AA Alive)</strong></td><td><strong>RM 800 per product</strong></td></tr>
+            <tr><td>NPRA Cosmetic Notification (Government Fee)</td><td>RM 50 per product</td></tr>
+            <tr><td>NPRA Cosmetic Notification Renewal</td><td>RM 50</td></tr>
+            <tr><td>NPRA Cosmetic Variation</td><td>RM 50</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note"><i class="fas fa-info-circle"></i> Government fees are subject to change by NPRA. Contact us for the latest information.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Us</span>
+        <h2>Why Choose AA Alive Sdn Bhd?</h2>
+        <p>We are your trusted partner for NPRA cosmetic product registration in Malaysia.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Expert Team</h3>
+          <p>Our consultants have extensive experience in NPRA cosmetic product registration with deep knowledge of the process.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Proven Track Record</h3>
+          <p>We have successfully registered hundreds of cosmetic products with NPRA with a high first-time approval rate.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-headset"></i>
+          <h3>End-to-End Support</h3>
+          <p>From initial consultation to post-market compliance, we provide comprehensive support throughout the entire product lifecycle.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-dollar-sign"></i>
+          <h3>Transparent Pricing</h3>
+          <p>Only RM 800 consultant fee per product. No hidden fees. Clear, upfront pricing from start to finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Register Your Cosmetic Product?</h2>
+      <p>Only RM 800 consultant fee. Fast NPRA approval. Get a free consultation today.</p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn btn-white">Get Free Consultation</a>
+        <a href="https://wa.me/60102062070?text=Hi%20AA%20Alive%2C%20I%27m%20interested%20in%20NPRA%20Cosmetic%20Registration.%0A%0APlease%20select%20a%20service%3A%0A1%EF%B8%8F%E2%83%A3%20New%20Cosmetic%20Product%20Registration%0A2%EF%B8%8F%E2%83%A3%20Registration%20Renewal%0A3%EF%B8%8F%E2%83%A3%20Product%20Variation%0A4%EF%B8%8F%E2%83%A3%20Other%0A%0APlease%20reply%20with%20your%20choice%20(1-4)." class="btn btn-outline-white" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Contact Us</h2>
+        <p>Have questions about NPRA registration? Reach out to our team for a free consultation.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <strong>Office Address</strong>
+              <p>AA Alive Sdn Bhd<br />1, Jln Perusahaan Amari 4,<br />68100 Batu Caves, Selangor</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+60102062070">+60 10-206 2070</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:aaalivecentral2@gmail.com">aaalivecentral2@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Business Hours</strong>
+              <p>Monday &ndash; Friday: 9:00 AM &ndash; 6:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/60102062070?text=Hi%20AA%20Alive%2C%20I%27m%20interested%20in%20NPRA%20Cosmetic%20Registration.%0A%0APlease%20select%20a%20service%3A%0A1%EF%B8%8F%E2%83%A3%20New%20Cosmetic%20Product%20Registration%0A2%EF%B8%8F%E2%83%A3%20Registration%20Renewal%0A3%EF%B8%8F%E2%83%A3%20Product%20Variation%0A4%EF%B8%8F%E2%83%A3%20Other%0A%0APlease%20reply%20with%20your%20choice%20(1-4)." aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span>*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+60 10-206 2070" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="npra-cosmetic-new">NPRA Cosmetic - New Registration</option>
+                <option value="npra-cosmetic-renewal">NPRA Cosmetic - Renewal</option>
+                <option value="npra-cosmetic-variation">NPRA Cosmetic - Variation</option>
+                <option value="npra-consultation">Free Consultation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message <span>*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your product and registration needs..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-icon">AA</span>
+            <span class="logo-text">AA Alive <small>Sdn Bhd</small></span>
+          </div>
+          <p>Fast NPRA cosmetic product registration in Malaysia. Only RM 800 per product.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#process">Registration Process</a></li>
+            <li><a href="#fees">Fees</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> +60 10-206 2070</li>
+            <li><i class="fas fa-envelope"></i> aaalivecentral2@gmail.com</li>
+            <li><i class="fas fa-location-dot"></i> 1, Jln Perusahaan Amari 4, 68100 Batu Caves, Selangor</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AA Alive Sdn Bhd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/60102062070?text=Hi%20AA%20Alive%2C%20I%27m%20interested%20in%20NPRA%20Cosmetic%20Registration.%0A%0APlease%20select%20a%20service%3A%0A1%EF%B8%8F%E2%83%A3%20New%20Cosmetic%20Product%20Registration%0A2%EF%B8%8F%E2%83%A3%20Registration%20Renewal%0A3%EF%B8%8F%E2%83%A3%20Product%20Variation%0A4%EF%B8%8F%E2%83%A3%20Other%0A%0APlease%20reply%20with%20your%20choice%20(1-4)." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="illustrations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
