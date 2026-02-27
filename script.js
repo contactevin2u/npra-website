@@ -256,7 +256,7 @@ function openModal(type) {
     </div>
     <div class="modal-footer">
       <a href="#contact" class="btn btn-primary" onclick="closeModal()"><i class="fas fa-paper-plane"></i> Get Free Consultation</a>
-      <a href="https://wa.me/60102062070?text=Hi%20AA%20Alive%2C%20I%27m%20interested%20in%20NPRA%20Cosmetic%20Registration.%0A%0APlease%20select%20a%20service%3A%0A1%EF%B8%8F%E2%83%A3%20New%20Cosmetic%20Product%20Registration%0A2%EF%B8%8F%E2%83%A3%20Registration%20Renewal%0A3%EF%B8%8F%E2%83%A3%20Product%20Variation%0A4%EF%B8%8F%E2%83%A3%20Other%0A%0APlease%20reply%20with%20your%20choice%20(1-4)." class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      <a href="https://wa.me/60102062070?text=Hi%20AA%20Alive%2C%20I%27m%20interested%20in%20NPRA%20Cosmetic%20Registration.%0A%0APlease%20select%20a%20service%3A%0A1.%20New%20Cosmetic%20Product%20Registration%0A2.%20Registration%20Renewal%0A3.%20Product%20Variation%0A4.%20Other%0A%0APlease%20reply%20with%20your%20choice%20(1-4)." class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
     </div>
   `;
 
